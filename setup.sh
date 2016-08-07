@@ -16,7 +16,7 @@ sudo mkdir /home/ubuntu/workspace
 
 echo "A needed java dependency, Note there may be others for more advanced Apps!!!"
 sudo apt-get update
-sudo apt-get install lib32z1  openjdk-7-jdk
+sudo apt-get install -y lib32z1  openjdk-7-jdk
  
 
 printf "\n\nexport JAVA_HOME=/usr/lib/jvm/openjdk-7-jdk\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
