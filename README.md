@@ -1,7 +1,14 @@
-# bash-install-android-sdk-auto-app-create-on-cloud9
+# bash-on-windows-android-sdk-installation-linux-subsystem
 using bash to automate the Android-SDK install specific to cloud9 and then create a debug HelloWorld App and Access webpage for Android 4.4.0 Kitkat, can also do Android versions 5.1
 
-Android SDK and Java on Cloud9
+
+
+
+Aug 6, 2016
+
+presently testing
+
+Android SDK and Java on your windows machine
 
 
 Fast steps:
