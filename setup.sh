@@ -36,7 +36,7 @@ cd /home/ubuntu/workspace/
 
 sudo wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz
 sudo tar -xvzf /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
-sudo rm android-sdk_r24.4.1-linux.tgz
+#sudo rm android-sdk_r24.4.1-linux.tgz
 
 
 #submitted by ismail-s faster way to do the above
@@ -51,7 +51,7 @@ sudo rm android-sdk_r24.4.1-linux.tgz
 
 echo "export paths to the .profile file so other terminals can use android sdk"
 
-printf "\n\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.profile
+printf "\n\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.bashrc
 
 echo "export paths here so this bash file can use android sdk"
 export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
@@ -63,7 +63,7 @@ export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
 
 
 # THIS UBUNTU:UBUNTU MUST BE YOUR USERNAME??????
-sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-sdk-linux
+#sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-sdk-linux
 
 
 
@@ -163,7 +163,7 @@ gradle
 echo "see if it worked"
 gradle -v
 
-rm gradle-2.9-all.zip
+#rm gradle-2.9-all.zip
 
 echo "-----------------------All Setup-------------------------"
 echo "------------------------------------------------------------------------------"
