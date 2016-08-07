@@ -118,7 +118,7 @@ android update sdk --filter extra --no-ui --force
 android update sdk --filter extra --no-ui --force
 android update sdk --all --filter build-tools-23.0.2 --no-ui --force
 android update sdk --filter android-20 --no-ui --force   #Android 4.4W.2 KitKat
-android update sdk --filter android-22 --no-ui --force   #Android 5.1.1  Lollipop
+#android update sdk --filter android-22 --no-ui --force   #Android 5.1.1  Lollipop
 #android update sdk --filter android-23 --no-ui --force   #Android 6.0    Marshmallow
 
 
@@ -136,9 +136,9 @@ echo "Now Gradle"
 gradle_version=2.9
 
 sudo mkdir /home/ubuntu/workspace/gradle
-wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
-unzip -oq ./gradle-${gradle_version}-all.zip -d /home/ubuntu/workspace/gradle
-ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/gradle-${gradle_version}
+sudo wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
+sudo unzip -oq ./gradle-${gradle_version}-all.zip -d /home/ubuntu/workspace/gradle
+sudo ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/gradle-${gradle_version}
 
 echo "exporting the Path to my .profile file so other terminals have the path"
 
@@ -154,7 +154,7 @@ export PATH=$PATH:$GRADLE_USER_HOME/bin
 
 #printf "export GRADLE_HOME=/home/ubuntu/workspace/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin" > /etc/profile.d/gradle.sh
 #. /etc/profile.d/gradle.sh
-hash -r ; sync
+#hash -r ; sync
 # check installation
 
 echo "setup gradle"
