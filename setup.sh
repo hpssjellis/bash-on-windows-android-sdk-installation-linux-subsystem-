@@ -21,10 +21,10 @@ sudo apt-get install -y lib32z1  openjdk-7-jdk
  
 # these lines may make it work or may break it
  
-export JAVA_HOME=/usr/lib/jvm/openjdk-7-jdk
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 
-printf "\n\nexport JAVA_HOME=/usr/lib/jvm/openjdk-7-jdk\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
+printf "\n\nexport JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
 
 echo "Now get the Android SDK"
