@@ -6,7 +6,20 @@ using bash to automate the Android-SDK install specific to cloud9 and then creat
 
 Aug 6, 2016
 
-presently testing
+presently testing. I probably will not use this repository
+
+
+.
+
+
+.
+
+
+
+.
+
+
+
 
 Android SDK and Java on your windows machine
 
