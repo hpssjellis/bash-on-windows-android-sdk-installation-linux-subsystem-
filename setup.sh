@@ -4,6 +4,16 @@
 #  bash setup.sh
 #  best in cloud 9 to just right click this file and select run
 
+
+# the above may not work so
+#chmod +x setup.sh
+sudo chmod +x a00-auto-ant-gradle.sh
+sudo chmod +x a04-restart-webserver.sh
+
+sudo mkdir /home/ubuntu
+sudo mkdir /home/ubuntu/workspace
+
+
 echo "A needed java dependency, Note there may be others for more advanced Apps!!!"
 sudo apt-get update
 sudo apt-get install lib32z1  openjdk-7-jdk
@@ -120,7 +130,7 @@ echo "Now Gradle"
 
 gradle_version=2.9
 
-mkdir /home/ubuntu/workspace/gradle
+sudo mkdir /home/ubuntu/workspace/gradle
 wget -N http://downloads.gradle.org/distributions/gradle-${gradle_version}-all.zip
 unzip -oq ./gradle-${gradle_version}-all.zip -d /home/ubuntu/workspace/gradle
 ln -sfnv gradle-${gradle_version} /home/ubuntu/workspace/gradle/gradle-${gradle_version}
@@ -161,10 +171,10 @@ echo "Now the fun part, Lets make the Hello World App for both Ant and Gradle"
 
 
 
-bash a00-auto-ant-gradle.sh
+./a00-auto-ant-gradle.sh
 
 echo "Now lets start Apache"
 
-bash a04-restart-webserver.sh
+./a04-restart-webserver.sh
 
 
