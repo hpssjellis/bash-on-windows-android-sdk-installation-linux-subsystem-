@@ -34,7 +34,7 @@ echo "Now get the Android SDK"
 
 cd /home/ubuntu/workspace/
 
-wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz
+sudo wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz
 tar -xvzf /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
 rm android-sdk_r24.4.1-linux.tgz
 
