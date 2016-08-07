@@ -3,6 +3,8 @@
 
 echo "Now Gradle"
 
+sudo apt-get install unzip
+
 gradle_version=2.9
 
 sudo mkdir /home/ubuntu/workspace/gradle
