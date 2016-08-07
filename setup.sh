@@ -18,6 +18,11 @@ echo "A needed java dependency, Note there may be others for more advanced Apps!
 sudo apt-get update
 sudo apt-get install -y lib32z1  openjdk-7-jdk
  
+ 
+# these lines may make it work or may break it
+ 
+export JAVA_HOME=/usr/lib/jvm/openjdk-7-jdk
+export PATH=$PATH:$JAVA_HOME/bin
 
 printf "\n\nexport JAVA_HOME=/usr/lib/jvm/openjdk-7-jdk\nexport PATH=\$PATH:\$JAVA_HOME/bin" >> ~/.bashrc 
 
