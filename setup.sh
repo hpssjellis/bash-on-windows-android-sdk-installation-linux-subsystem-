@@ -58,6 +58,11 @@ export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
 export PATH=$PATH:$ANDROID_SDK_HOME/tools
 export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
 
+
+# ------------------------------IMPORTANT -----------------------
+
+
+# THIS UBUNTU:UBUNTU MUST BE YOUR USERNAME??????
 sudo chown -R ubuntu:ubuntu /home/ubuntu/workspace/android-sdk-linux
 
 
